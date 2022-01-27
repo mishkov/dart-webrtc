@@ -2,12 +2,16 @@ name: dart_webrtc
 description: Use the dart/js library to re-wrap the webrtc js interface of the browser, to adapted common browsers.
 version: 1.0.3
 homepage: https://github.com/flutter-webrtc/dart-webrtc
+publish_to: none
 
 environment:
-  sdk: '>=2.13.0 <3.0.0'
+  sdk: ">=2.13.0 <3.0.0"
 
 dependencies:
-  webrtc_interface: ^1.0.1
+  webrtc_interface:
+    git:
+      url: https://github.com/mishkov/webrtc-interface.git
+      ref: eyes-open-stream
 
 dev_dependencies:
   build_runner: ^1.10.0
